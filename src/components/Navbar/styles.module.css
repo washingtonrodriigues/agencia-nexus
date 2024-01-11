@@ -1,0 +1,46 @@
+.navbar {
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.sheet_content {
+  width: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.li_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #42c6ff;
+}
+
+.btn {
+  background-color: #42c6ff;
+  color: #000;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.accordion_title {
+  color: #42c6ff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.ul_links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}

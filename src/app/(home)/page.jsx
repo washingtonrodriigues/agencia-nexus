@@ -1,6 +1,10 @@
-import Banners from './components/Banners'
-import About from './components/About'
-import Solutions from './components/Solutions'
+import Banners from '../banners/page'
+import About from '../about/page'
+import Solutions from '../solutions/page'
+import Customers from '../customers/page'
+import Experts from '../experts/page'
+import Contact from '../contact/page'
+import Footer from '../footer/page'
 
 const Home = () => {
     return (
@@ -8,6 +12,10 @@ const Home = () => {
             <Banners />
             <About />
             <Solutions />
+            <Customers />
+            <Experts />
+            <Contact />
+            <Footer />
         </div>
     );
 }

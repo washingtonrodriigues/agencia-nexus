@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './styles.module.css'
 import Link from 'next/link';
-import BlackBtn from '../../../../components/ui/black-btn'
+import BlackBtn from '@/components/ui/black-btn';
 
 const About = () => {
     return (
@@ -9,6 +9,7 @@ const About = () => {
             <div className="text-center">
                 <h1 className={`${styles.h1}`}>Nexus</h1>
                 <h2 className={`${styles.h2}`}>Quem somos?</h2>
+                <span className={styles.separator}></span>
             </div>
             <ul className={`${styles.ul}`}>
                 <li className={`${styles.li}`}>

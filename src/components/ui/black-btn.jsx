@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const BlackBtn = ({ title, href }) => {
+const BlackBtn = ({ title, href, className }) => {
     const buttonStyle = {
         backgroundColor: "#000",
         color: "#fff",
@@ -16,7 +16,7 @@ const BlackBtn = ({ title, href }) => {
         width: "150px",
     }
     return (
-        <Link href={href} style={buttonStyle}>{title}</Link>
+        <Link href={href} className={className} style={buttonStyle}>{title}</Link>
     );
 }
 

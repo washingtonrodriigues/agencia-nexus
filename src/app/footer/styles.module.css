@@ -1,0 +1,19 @@
+.container_ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.title_ul {
+  color: #00f4ff;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,40 @@
+.h1 {
+  font-family: "poppins";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px;
+}
+
+.number {
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.name {
+  font-family: "poppins";
+  font-size: 14px;
+}
+
+.email {
+  font-family: "poppins";
+}
+
+.h2 {
+  font-family: "poppins";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.social_medias {
+  margin-top: 22px;
+  margin-bottom: 30px;
+  gap: 15px;
+}

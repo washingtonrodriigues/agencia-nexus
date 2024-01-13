@@ -3,6 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import WhatsappBtn from "@/components/ui/wppbutton";
+import { register } from "swiper/element/bundle";
+
+register();
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +37,10 @@ export default function RootLayout({
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@700&display=swap"
           rel="stylesheet"
         />
       </head>

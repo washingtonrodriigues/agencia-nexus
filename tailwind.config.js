@@ -20,7 +20,8 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        ubuntu: ['Ubuntu', 'sans-serif']
       },
       colors: {
         border: "hsl(var(--border))",

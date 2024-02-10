@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../../public/fonts/Circular-font-family/CircularStd-Book.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Circular Std Black";
+  src: url("../../public/fonts/Circular-font-family/CircularStd-Black.otf")
+    format("truetype");
+}
+
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -31,10 +43,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 183 100% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 198 100% 63%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -95,6 +107,7 @@
   }
   html {
     @apply h-full;
+    scroll-behavior: smooth;
   }
 
   section {
@@ -109,4 +122,34 @@
   }
 
   /* ... (outros estilos) */
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .blue-btn-shadow {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .box-shadow {
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.301);
+  }
+
+  .circular-book {
+    font-family: "Circular Std Book";
+  }
+
+  .circular-black {
+    font-family: "Circular Std Black";
+  }
+
+  .height-90vh-plus-10vw {
+    height: calc(90% + 10vw);
+  }
+
+  .height-100vh-plus-32px {
+    height: calc(100% + 1.5rem);
+  }
 }

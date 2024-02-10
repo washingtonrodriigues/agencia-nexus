@@ -35,7 +35,7 @@ const WhatsappBtn = () => {
     return (
         <Link
 
-            href="#"
+            href="https://linktr.ee/nexusagenciadigital" target="_blank"
             className="whatsapp-button fixed right-4 flex h-[65px] w-[65px] items-center justify-center"
             style={buttonStyle}
         >

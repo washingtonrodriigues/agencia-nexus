@@ -4,7 +4,6 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from './styles.module.css'
 
 const Banners = () => {
     const settings = {
@@ -16,17 +15,23 @@ const Banners = () => {
     };
     return (
 
-        <header className={`overflow-hidden ${styles.header}`}>
+        <header className={"overflow-hidden"}>
             <Slider {...settings}>
                 <div>
-                    <Image src="/banner_trafego.png" alt="Banner 1" width={1200} height={500} />
+
+                    <div className="hidden lg:block">
+                        <Image src="/banner_trafego_desktop.png" alt="Banner 1" width={1920} height={1080} sizes="" />
+                    </div>
+                    <div className="lg:hidden">
+                        <Image src="/banner_trafego.png" alt="Banner 1" width={1200} height={500} sizes="" />
+                    </div>
+                </div>
+                {/* <div>
+                    <Image src="/banner_trafego.png" alt="Banner 2" width={1200} height={500} sizes="" />
                 </div>
                 <div>
-                    <Image src="/banner_trafego.png" alt="Banner 2" width={1200} height={500} />
-                </div>
-                <div>
-                    <Image src="/banner_trafego.png" alt="Banner 3" width={1200} height={500} />
-                </div>
+                    <Image src="/banner_trafego.png" alt="Banner 3" width={1200} height={500} sizes="" />
+                </div> */}
             </Slider>
         </header>
     );

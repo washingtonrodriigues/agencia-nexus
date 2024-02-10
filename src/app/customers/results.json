@@ -1,20 +1,62 @@
 [
   {
-    "image": "/igui-logo.png",
+    "image": "/logos/outletlingerie-logo.png",
+    "title": "1867+",
+    "text1": "leads captados",
+    "text2": "Em um período de 6 meses"
+  },
+  {
+    "image": "/logos/dracarol-logo.png",
+    "title": "174,33%",
+    "text1": "aumento no ROI",
+    "text2": "Somente em Janeiro"
+  },
+  {
+    "image": "/logos/igui-logo.png",
     "title": "850%",
-    "text1": "de crescimento no número de leads",
+    "text1": "aumento no número de leads",
     "text2": "Durante 12 meses"
   },
   {
-    "image": "/igui-logo.png",
+    "image": "/logos/splash-logo.png",
+    "title": "R$ 5,12",
+    "text1": "Custo por lead",
+    "text2": "Último trimestre"
+  },
+  {
+    "image": "/logos/igui-logo.png",
     "title": "850%",
-    "text1": "de crescimento no número de leads",
+    "text1": "aumento no número de leads",
     "text2": "Durante 12 meses"
   },
   {
-    "image": "/igui-logo.png",
+    "image": "/logos/igui-logo.png",
     "title": "850%",
-    "text1": "de crescimento no número de leads",
+    "text1": "aumento no número de leads",
+    "text2": "Durante 12 meses"
+  },
+  {
+    "image": "/logos/igui-logo.png",
+    "title": "850%",
+    "text1": "aumento no número de leads",
+    "text2": "Durante 12 meses"
+  },
+  {
+    "image": "/logos/igui-logo.png",
+    "title": "850%",
+    "text1": "aumento no número de leads",
+    "text2": "Durante 12 meses"
+  },
+  {
+    "image": "/logos/igui-logo.png",
+    "title": "850%",
+    "text1": "aumento no número de leads",
+    "text2": "Durante 12 meses"
+  },
+  {
+    "image": "/logos/igui-logo.png",
+    "title": "850%",
+    "text1": "aumento no número de leads",
     "text2": "Durante 12 meses"
   }
 ]

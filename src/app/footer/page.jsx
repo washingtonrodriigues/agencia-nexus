@@ -28,8 +28,8 @@ const Footer = () => {
             </div>
             <Separator style={{ opacity: ".3" }} />
             <div style={{ margin: "30px", gap: "20px" }} className="flex flex-col items-center justify-center">
-                <p>© {date} Nexus Agência Digital</p>
-                <Image src="/nexuslogo.png" alt="Nexus | Agência Digital" width={150} height={0} sizes="" />
+                <p className="text-sm">© {date} Todos os direitos reservados</p>
+                <Image src="/logos/nexuslogo.png" alt="Nexus | Agência Digital" width={150} height={0} sizes="" />
             </div>
         </footer>
     );

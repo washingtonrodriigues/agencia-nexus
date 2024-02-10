@@ -1,0 +1,71 @@
+.first_content {
+  background-color: #fff;
+  color: #000;
+  padding: 30px 20px;
+  height: auto;
+}
+
+.first_content_h2 {
+  font-size: 2rem;
+  font-family: "ubuntu";
+  line-height: 2.5rem;
+}
+
+.first_content_span {
+  color: #0078ac;
+}
+
+.first_content_paragraphs {
+  margin-top: 30px;
+  text-align: justify;
+  font-family: "poppins";
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider_item {
+  height: 250px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: grab;
+  font-family: "poppins";
+}
+
+.card_title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card_text {
+  text-align: center;
+  margin-bottom: 25px;
+  max-width: 300px;
+}
+
+.title_cta {
+  font-family: "ubuntu";
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.span_cta {
+  color: #42c6ff;
+}
+
+.btn {
+  font-family: "poppins";
+  display: flex;
+  border: 2px solid #42c6ff;
+  border-radius: 20px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+}

@@ -1,46 +1,16 @@
-.navbar {
-  justify-content: space-between;
-  padding: 15px;
-}
+/* ESTILIZAÇÃO DO NAVBAR AO DAR SCROLL NA PÁGINA*/
 
-.sheet_content {
-  width: 100%;
-  background-color: #000;
-  opacity: 0.8;
-}
-
-.poppins {
-  font-family: "Poppins";
-}
-
-.li_title {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #42c6ff;
-}
-
-.btn {
-  background-color: #42c6ff;
-  color: #000;
-  height: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.accordion_title {
-  color: #42c6ff;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.ul_links {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-size: 16px;
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px); /* Ajuste conforme necessário */
+  z-index: 1000;
+  box-shadow: 0 0.33rem 1.105rem rgba(11, 11, 11, 0.35);
+  background: #000;
+  border-radius: clamp(1.5rem, 1.2rem + 1.5vw, 3rem) 1rem
+    clamp(1.5rem, 1.2rem + 1.5vw, 3rem) 1rem !important;
+  padding: 0 clamp(1rem, -0.0689655172rem + 1.724137931vw, 1rem) !important;
+  transition: all 0.3s ease;
+  margin: 10px 20px;
 }

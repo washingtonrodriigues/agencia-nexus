@@ -1,27 +1,44 @@
 [
   {
-    "image": "/trafego-icon.png",
-    "title": "Gestão de Tráfego",
-    "description": "Mais visibilidade e mais clientes! Atraímos o público certo para o seu negócio, garantindo o melhor retorno sobre o investimento em publicidade online."
+    "image": "/meta.png",
+    "title": "Meta ADS",
+    "description": "Aumente a visibilidade da sua empresa nas principais redes sociais com estratégias eficazes para atrair o público certo para o seu negócio.",
+    "link": "/pages/metaads"
   },
   {
-    "image": "/landingpages-icon.png",
+    "image": "/googleadslogo.png",
+    "title": "Google ADS",
+    "description": "Melhore o posicionamento da sua empresa na web, com campanhas estratégias para alcançar mais clientes nos principais mecanismos de busca, como Google e Youtube.",
+    "link": "/pages/metaads"
+  },
+  {
+    "image": "/landingpages.png",
     "title": "Landing Pages",
-    "description": "Desenvolvemos páginas web que posicionam o seu negócio para atrair e converter leads em potenciais clientes, aumentando as chances de fechar negócio."
+    "description": "Desenvolvemos páginas web que posicionam o seu negócio para atrair e converter leads em potenciais clientes, aumentando as chances de fechar negócio.",
+    "link": "/app/pages/trafegopago"
   },
   {
-    "image": "/websites-icon.png",
+    "image": "/websites.png",
     "title": "Websites",
-    "description": "Garanta uma experiência positiva ao seu usuário através de um site morderno e otimizado para ter um excelente posicionamento nos melhores mecanismos de busca, como o Google."
+    "description": "Garanta uma experiência positiva ao seu usuário através de um site morderno e otimizado para ter um excelente posicionamento nos melhores mecanismos de busca, como o Google.",
+    "link": "/app/pages/trafegopago"
   },
   {
-    "image": "/socialmedias-icon.png",
+    "image": "/metaads.png",
     "title": "Redes Sociais",
-    "description": "Cuidamos da sua marca nos meios digitais através de um posicionamento estratégico com publicações que alcançam seu público-alvo nas principais redes sociais."
+    "description": "Cuidamos da sua marca nos meios digitais através de um posicionamento estratégico com publicações que alcançam seu público-alvo nas principais redes sociais.",
+    "link": "/app/pages/trafegopago"
   },
   {
-    "image": "/websystems-icon.png",
+    "image": "/websystems.png",
     "title": "Sistemas Personalizados",
-    "description": "Desenvolvemos sistemas personalizados exclusivamente para o seu negócio, abrangendo todos os processos de gestão e controle."
+    "description": "Desenvolvemos sistemas personalizados exclusivamente para o seu negócio, abrangendo todos os processos de gestão e controle.",
+    "link": "/app/pages/trafegopago"
+  },
+  {
+    "image": "/automacao.png",
+    "title": "Bots de Automação",
+    "description": "Em breve",
+    "link": ""
   }
 ]

@@ -1,22 +1,26 @@
 [
   {
-    "image": "/igui-logo.png",
+    "image": "/logos/igui-logo.png",
     "name": "Igui Piscinas"
   },
   {
-    "image": "/odontobraz-logo.png",
+    "image": "/logos/odontobraz-logo.png",
     "name": "Odonto Braz"
   },
   {
-    "image": "/outletlingerie-logo.png",
+    "image": "/logos/cartoon-logo.png",
+    "name": "Cartoon Geek"
+  },
+  {
+    "image": "/logos/outletlingerie-logo.png",
     "name": "Outlet Lingerie"
   },
   {
-    "image": "/splash-logo.png",
+    "image": "/logos/splash-logo.png",
     "name": "Splash A Original"
   },
   {
-    "image": "/wenzel-logo.png",
+    "image": "/logos/wenzel-logo.png",
     "name": "Wenzel Marmoraria"
   }
 ]

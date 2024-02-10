@@ -1,0 +1,22 @@
+.slider_item {
+    height: 250px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: grab;
+    font-family: "poppins";
+  }
+  
+  .card_title {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .card_text {
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 300px;
+  }

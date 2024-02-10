@@ -115,7 +115,7 @@ const Customers = () => {
 
                 </div>
             </div>
-            <div className="overflow-hidden bg-white h-[300px] pt-[30px] lg:pt-[50px] lg:pb-[50px] lg:h-auto">
+            <div className="overflow-x-hidden bg-white h-[300px] pt-[30px] lg:pt-[50px] lg:pb-[50px] lg:h-auto">
                 <div className="text-center lg:ml-[50px]">
                     <h1 className="text-[#0078ac] font-poppins uppercase tracking-[2px] lg:text-[18px] lg:text-left">Nossos clientes</h1>
                     <h2 className="text-black font-ubuntu text-[2rem] font-bold lg:text-[50px] lg:text-left">Quem<span className="text-[#0078ac]"> confia</span></h2>

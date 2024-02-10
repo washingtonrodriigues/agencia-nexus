@@ -9,7 +9,7 @@ const Experts = () => {
                 <div className="flex flex-col pl-[15px] lg:pr-[15%] text-nowrap">
                     <p className="text-[2.2rem] leading-[40px]  font-semibold lg:text-[3rem]">Acesse o topo</p>
                     <p className="text-[2rem] leading-[40px]" style={{ fontWeight: 'normal' }}>com a gente!</p>
-                    <BlackBtn style={{ marginLeft: 0 }} className="text-sm gap-[5px] lg:text-base w-[160px]" href="#" title="Eu quero" />
+                    <BlackBtn style={{ marginLeft: 0 }} className="text-xs gap-[5px] lg:text-base w-[140px]" href="#" title="Eu quero" />
                 </div>
                 <div>
                     <svg class=" h-auto w-[300px] lg:w-[700px] object-fit-cover top-50 " viewBox="0 0 863 828" fill="none">

@@ -38,7 +38,7 @@ const Navbar = () => {
                         <MenuIcon />
                     </Button>
                 </SheetTrigger>
-                <SheetContent className="w-[100%] bg-black opacity-[0.8] z-[9999]" side="right" >
+                <SheetContent className="w-[100%] bg-black opacity-[0.9] z-[9999]" side="right" >
                     <ul className="flex h-full flex-col items-center justify-center font-poppins">
                         <li className="uppercase font-bold text-[#42c6ff]">
                             Menu
@@ -145,9 +145,9 @@ const Navbar = () => {
                                 </AccordionItem>
                             </Accordion>
                         </li>
-                        <li>
+                        <li className="mt-5">
 
-                            <Link className="text-base bg-[#42c6ff] text-black h-[50px] uppercase font-bold mt-5" href="https://linktr.ee/nexusagenciadigital">
+                            <Link className="text-base rounded-[50px] px-4 py-3 bg-[#42c6ff] text-black h-[50px] uppercase font-bold" href="https://linktr.ee/nexusagenciadigital">
                                 Fale com um especialista
                             </Link>
                         </li>

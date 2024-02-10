@@ -41,8 +41,8 @@ const Customers = () => {
 
     }, [])
     return (
-        <section className="mt-[30px] lg:mt-[50px] lg:h-auto">
-            <div className="h-[380px] lg:h-auto">
+        <section className=" lg:mt-[50px] lg:h-auto">
+            <div className="h-auto py-[30px]">
                 <div className="lg:ml-[50px] relative">
                     <h1 className="font-poppins uppercase text-[#00f4ff] tracking-[2px] text-center lg:text-[18px] lg:text-left">Resultados</h1>
                     <h2 className="font-ubuntu text-center   lg:text-[50px] text-[1.5rem] font-bold lg:text-left">O que <span className="text-[#00f4ff]">você</span> também pode <span className="text-[#00f4ff]">alcançar</span>!</h2>

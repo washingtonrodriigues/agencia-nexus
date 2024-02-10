@@ -5,7 +5,7 @@ import BlackBtn from '@/components/ui/black-btn';
 
 const About = () => {
     return (
-        <section className="relative bg-primary text-black pt-[30px] lg:pt-[50px]">
+        <section className="relative bg-primary text-black py-[30px] lg:pt-[50px]">
             <div className="text-center">
                 <h1 className={`${styles.h1} font-poppins uppercase flex justify-center items-center tracking-[2px] lg:text-[18px]`}>Nexus</h1>
                 <h2 className="font-ubuntu text-[2rem] lg:text-[50px]  font-bold">Quem somos?</h2>

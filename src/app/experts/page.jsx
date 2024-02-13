@@ -4,7 +4,7 @@ import BlackBtn from "../../components/ui/black-btn"
 
 const Experts = () => {
     return (
-        <div className="relative mt-[50px]">
+        <div className="relative mt-[50px] lg:mt-0">
             <div className="h-[240px] lg:h-[350px] bg-[#42c6ff]  font-ubuntu text-black overflow-hidden flex items-center justify-between lg:flex-row-reverse">
                 <div className="flex flex-col pl-[15px] lg:pr-[15%] text-nowrap">
                     <p className="text-[2.2rem] leading-[40px]  font-semibold lg:text-[3rem]">Acesse o topo</p>

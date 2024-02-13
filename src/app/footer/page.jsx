@@ -15,15 +15,15 @@ const Footer = () => {
 
     return (
         <footer style={{ margin: "30px 0" }}>
-            <div className={styles.container_ul}>
-                <ul className={styles.ul}>
-                    <li className={styles.title_ul}>institucional</li>
-                    <li><Link href="">Quem somos</Link></li>
-                    <li><Link href="">Política de Privacidade</Link></li>
+            <div className="flex justify-center gap-[15px] lg:gap-10 uppercase font-poppins mb-[30px] text-[14px]">
+                <ul className="flex flex-col gap-[10px]">
+                    <li className="text-[#00f4ff]">institucional</li>
+                    <li className="hover:underline"><Link href="">Quem somos</Link></li>
+                    <li className="hover:underline"><Link href="">Política de Privacidade</Link></li>
                 </ul>
-                <ul className={styles.ul}>
-                    <li className={styles.title_ul}>Ajuda</li>
-                    <li><Link href="">FAQ | Dúvidas Frequentes</Link></li>
+                <ul className="flex flex-col gap-[10px]">
+                    <li className="text-[#00f4ff]">Ajuda</li>
+                    <li className="hover:underline"><Link href="">FAQ | Dúvidas Frequentes</Link></li>
                 </ul>
             </div>
             <Separator style={{ opacity: ".3" }} />

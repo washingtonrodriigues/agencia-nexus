@@ -10,11 +10,16 @@ import benefits from './benefits.json'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ChevronRightIcon } from 'lucide-react';
+import FirstSectionProduct from '@/components/FirstSectionProduct';
+import LastSectionProduct from '@/components/LastSectionProduct';
 
 const MetaADS = () => {
+
+    const [hovered, setHovered] = useState(false)
+
     useEffect(() => {
         const style = document.createElement('style');
         style.innerHTML = `
@@ -67,41 +72,49 @@ const MetaADS = () => {
 
     return (
         <div>
-            <HeaderProduct src1="/meta.png" src2="/metaads.png" title="Meta ADS" bg="/meta-bg.png" />
-            <section className={styles.first_content}>
-                <h2 className={styles.first_content_h2}>Aumente suas <span className={styles.first_content_span}>vendas</span> com a <span className={styles.first_content_span}>estratégia</span> certa</h2>
-                <div className={styles.first_content_paragraphs}>
-                    <p>Hoje em dia, quase todas as pessoas possuem redes sociais. Se você não faz anúncios na internet, talvez você esteja impedindo o crescimento do seu negócio e, consequentemente, deixando de ganhar dinheiro.</p>
-                    <p>Se aumentar a visibilidade da sua marca, atrair mais clientes em potencial e escalar o seu negócio para outro patamar for uma vontade sua, nós podemos te ajudar. Através do Meta ADS, nós conseguimos posicionar o seu negócio da maneira correta nas principais redes sociais, como Instagram e Facebook, atraindo o público certo, transformando-os em potenciais clientes e aumentando as conversões.</p>
-                    <p>Aqui na Nexus, compreendemos a importância de cada anúncio. Ao confiar em nossa experiência, você não apenas economiza tempo, mas também garante que cada investimento retorne em resultados palpáveis. Deixe-nos ser parte do seu sucesso online, impulsionando suas vendas e levando o seu negócio a novos horizontes.</p>
-                </div>
-            </section>
-            <Separator style={{ opacity: ".5" }} />
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                navigation={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination, Navigation]}
-            >
-                {benefits.map(item => (
-                    <SwiperSlide key={item} className={styles.slider_item}>
-                        <Image src={item.image} alt={item.title} width={60} height={0} sizes='' />
+            <HeaderProduct src1="/meta.png" src2="/metaads.png" title="Meta ADS" bg="/bg-header-traffic-page.jpg" />
+            <FirstSectionProduct title="Aumente suas" span1="vendas" title_continuation="com a" span2="estratégia" title_continuation2="certa" p1="Hoje em dia, quase todas as pessoas possuem redes sociais. Se você não faz anúncios na internet, talvez você esteja impedindo o crescimento do seu negócio e, consequentemente, deixando de ganhar dinheiro." p2="Se aumentar a visibilidade da sua marca, atrair mais clientes em potencial e escalar o seu negócio para outro patamar for uma vontade sua, nós podemos te ajudar. Através do Meta ADS, nós conseguimos posicionar o seu negócio da maneira correta nas principais redes sociais, como Instagram e Facebook, atraindo o público certo, transformando-os em potenciais clientes e aumentando as conversões." p3="Aqui na Nexus, compreendemos a importância de cada anúncio. Ao confiar em nossa experiência, você não apenas economiza tempo, mas também garante que cada investimento retorne em resultados palpáveis. Deixe-nos ser parte do seu sucesso online, impulsionando suas vendas e levando o seu negócio a novos horizontes." />
 
-                        <h2 className={styles.card_title}>{item.title}</h2>
-                        <p className={styles.card_text}>{item.text}</p>
-                    </SwiperSlide>
+            <Separator style={{ opacity: ".5" }} />
+            {/* Slider in mobile version */}
+            <div className='lg:hidden'>
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    navigation={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination, Navigation]}
+                >
+                    {benefits.map(item => (
+                        <SwiperSlide key={item} className={styles.slider_item}>
+                            <Image src={item.image} alt={item.title} width={60} height={0} sizes='' />
+                            <h2 className="font-bold text-[1.3rem]">{item.title}</h2>
+                            <p className="text-center mb-[25px] max-w-[300px]">{item.text}</p>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+            {/* Static cards */}
+            <div className='bg-white hidden lg:flex justify-evenly text-black py-[50px]'>
+                {benefits.map(item => (
+                    <div key={item} className='flex justify-center items-start w-[250px] gap-5'>
+                        <Image src={item.image} alt={item.title} width={40} height={0} sizes='' />
+                        <div className='flex flex-col gap-3'>
+                            <h2 className="font-bold text-[1.3rem]">{item.title}</h2>
+                            <p className=" mb-[25px] max-w-[300px]">{item.text}</p>
+                        </div>
+                    </div>
                 ))}
-            </Swiper>
+            </div>
             <SectionBlack src="/meta-img1.png" title="Identificamos o seu " titleSpan="público-alvo" text="Público-alvo é o público ideal para o seu negócio, ou seja, pessoas têm um grande potencial de se tornarem seus clientes. Nossa missão é te ajudar a indentificar o perfil desse público, pois as suas chances de fechar negócio ou efetivar uma venda triplicam quando direcionamos os anúncios para as pessoas certas." />
 
             <SectionWhite src="/meta-img2.png" title="Campanhas de acordo com " titleSpan="o seu objetivo" text="Os anúncios são totalmente adaptados para trazer os melhores resultados que acordo com os seus objetivos, sejam eles reconhecimento de marca, maior visibilidade, mais cadastros, aumento das vendas e muito mais. É possível segmentar o público por idade, gênero, interesses, localização entre várias outras formas para obter a melhor perfomance nos anúncios." />
@@ -110,11 +123,8 @@ const MetaADS = () => {
 
             <SectionWhite src="/meta-img4.png" title="Analisamos as " titleSpan="métricas das campanhas" text=" Monitoramos de perto o desempenho das suas campanhas, analisando os resultados obtidos e ajustando estratégias conforme necessário para impulsionar a eficácia e maximizar o retorno sobre o investimento. Revisamos os detalhes e fazemos relatórios periódicos com a performance e resultados das campanhas." />
 
-            <div style={{ margin: "30px 0" }} className='flex flex-col items-center'>
-                <h2 className={styles.title_cta}>Vamos <span className={styles.span_cta}>alavancar suas vendas</span> no mundo digital?</h2>
-                <Image src="/meta-img5.png" alt='Aumentar vendas' width={400} height={0} sizes='' />
-                <Link className={styles.btn} href="https://linktr.ee/nexusagenciadigital" target='_blank'>Sim, eu quero! <ChevronRightIcon /></Link>
-            </div>
+            <LastSectionProduct title="Quer" span="alavancar suas vendas" title_continuation="no mundo digital?" image="/meta-img5.png" alt="Aumentar vendas" text_btn="Sim, eu quero!" />
+
             <Form />
         </div>
     );

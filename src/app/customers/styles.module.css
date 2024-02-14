@@ -52,10 +52,21 @@
 
 @keyframes slidein {
   0% {
-    transform: translateX(100%);
+    transform: translateX(150%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes slidein {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 

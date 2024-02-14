@@ -128,7 +128,7 @@ const Solutions = () => {
                         <SwiperSlide style={{ height: '530px' }} key={item} className={`${styles.slider_item}  bg-white text-black cursor-grab box-shadow rounded-[20px] max-w-[360px] mx-[20px]`}>
                             <div className='flex flex-col justify-center items-center'>
                                 <Image src={item.image} alt={item.title} width={80} height={80} sizes='' />
-                                <h2 className={styles.card_title}>{item.title}</h2>
+                                <h2 className="font-poppins font-bold text-[2rem] text-center text-wrap mt-5 px-[30px]">{item.title}</h2>
                             </div>
                             <p className={styles.card_description}>{item.description}</p>
                             <Link className="bg-[#01c8e2] hover:bg-[#1eb6c9] hover:tracking-[2px] duration-200 text-black w-[220px] h-[50px] flex justify-center items-center rounded-[5px] font-poppins font-bold uppercase blue-btn-shadow" href={item.link}>Saiba mais</Link>

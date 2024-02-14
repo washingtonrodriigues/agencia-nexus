@@ -40,8 +40,13 @@ const Navbar = () => {
                 </SheetTrigger>
                 <SheetContent className="w-[100%] bg-black opacity-[0.9] z-[9999]" side="right" >
                     <ul className="flex h-full flex-col items-center justify-center font-poppins">
-                        <li className="uppercase font-bold text-[#42c6ff]">
+                        <li className="uppercase mb-5 font-bold text-[#42c6ff]">
                             Menu
+                        </li>
+                        <li className="py-4">
+                            <SheetClose className="text-lg" asChild>
+                                <Link href="/">Home</Link>
+                            </SheetClose>
                         </li>
                         <li>
                             <Accordion type="single" collapsible>
@@ -105,10 +110,14 @@ const Navbar = () => {
                             </Accordion>
                         </li>
                         <li className="py-4">
-                            <Link className="text-lg" href="#">Sobre</Link>
+                            <SheetClose className="text-lg" asChild>
+                                <Link href="#">Sobre</Link>
+                            </SheetClose>
                         </li>
                         <li className="py-4">
-                            <Link className="text-lg" href="#">Contato</Link>
+                            <SheetClose className="text-lg" asChild>
+                                <Link href="#">Contato</Link>
+                            </SheetClose>
                         </li>
                         <li >
                             <Accordion type="single" collapsible>
@@ -119,26 +128,26 @@ const Navbar = () => {
                                         Redes Sociais
                                     </AccordionTrigger>
                                     <AccordionContent>
-                                        <ul className="mt-5 flex flex-col gap-[15px] text-base text-center">
+                                        <ul className="mt-5 flex flex-col gap-[20px] text-base text-center">
                                             <li>
-                                                <Link href="#">
-                                                    LinkedIn
-                                                </Link>
+                                                <SheetClose asChild>
+                                                    <Link href="#">LinkedIn</Link>
+                                                </SheetClose>
                                             </li>
                                             <li>
-                                                <Link href="#">
-                                                    Instagram
-                                                </Link>
+                                                <SheetClose asChild>
+                                                    <Link href="#">Instagram</Link>
+                                                </SheetClose>
                                             </li>
                                             <li>
-                                                <Link href="#">
-                                                    Facebook
-                                                </Link>
+                                                <SheetClose asChild>
+                                                    <Link href="#">Facebook</Link>
+                                                </SheetClose>
                                             </li>
                                             <li>
-                                                <Link href="#">
-                                                    TikTok
-                                                </Link>
+                                                <SheetClose asChild>
+                                                    <Link href="#">TikTok</Link>
+                                                </SheetClose>
                                             </li>
                                         </ul>
                                     </AccordionContent>

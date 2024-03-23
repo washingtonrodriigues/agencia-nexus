@@ -40,7 +40,7 @@ const WhatsappBtn = () => {
             style={buttonStyle}
         >
             <Image
-                src="/wppsvg.svg"
+                src="/icons/wppsvg.svg"
                 alt="Whatsapp"
                 width={35}
                 height={35}

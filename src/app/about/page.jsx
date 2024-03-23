@@ -13,15 +13,15 @@ const About = () => {
             </div>
             <ul className="my-5 mx-[30px] flex flex-col gap-5 lg:flex-row lg:justify-center lg:gap-[80px] lg:my-[50px]">
                 <li className="font-roboto font-[900] text-[1.5rem] text-white text-shadow flex gap-3 lg:items-center">
-                    <Image src="/brazilsvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
+                    <Image src="/icons/brazilsvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
                     <p className='lg:flex lg:flex-col lg:items-start'><span className='lg:text-[3rem]'>Clientes</span> por todo Brasil</p>
                 </li>
                 <li className="font-roboto font-[900] text-[1.5rem] text-white text-shadow flex gap-3 lg:items-center">
-                    <Image src="/plussvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
+                    <Image src="/icons/plussvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
                     <p className='lg:flex lg:flex-col lg:items-start'><span className='lg:text-[3rem]'>03 anos</span> de mercado</p>
                 </li>
                 <li className="font-roboto font-[900] text-[1.5rem] text-white text-shadow flex gap-3 lg:items-center">
-                    <Image src="/plussvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
+                    <Image src="/icons/plussvg.svg" alt='Clientes por todo Brasil' width={0} height={0} sizes='' className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]' />
                     <p className='lg:flex lg:flex-col lg:items-start'><span className='lg:text-[3rem]'>100k</span> faturados por clientes</p>
                 </li>
             </ul>

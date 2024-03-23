@@ -51,7 +51,6 @@ export default function RootLayout({
           <Navbar />
 
           <div className="relative flex-1">
-            <WhatsappBtn />
             {children}
           </div>
           <Footer />

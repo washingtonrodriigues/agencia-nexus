@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const WhatsappBtn = () => {
+const WhatsappBtn = ({ onclick }) => {
     const [isShaking, setIsShaking] = useState(false);
+    // const [hovered, setHovered] = useState(false)
 
     useEffect(() => {
         const shakeButton = () => {
@@ -27,17 +28,20 @@ const WhatsappBtn = () => {
         zIndex: 9999,
         bottom: "20px",
         backgroundColor: "rgb(50, 168, 82)",
+        // backgroundColor: hovered ? "rgb(21, 110, 45)" : "rgb(50, 168, 82)",
         borderRadius: "50%",
         padding: "10px",
         animation: isShaking ? 'shake 0.5s ease-in-out' : 'none',
     };
 
     return (
-        <Link
+        <button
 
-            href="https://linktr.ee/nexusagenciadigital" target="_blank"
-            className="whatsapp-button fixed right-4 flex h-[65px] w-[65px] items-center justify-center"
+            onClick={onclick}
+            className="whatsapp-button fixed right-4 flex h-[65px] w-[65px] items-center justify-center transition-all duration-300"
             style={buttonStyle}
+        // onMouseEnter={setHovered(true)}
+        // onMouseLeave={setHovered(false)}
         >
             <Image
                 src="/icons/wppsvg.svg"
@@ -46,7 +50,7 @@ const WhatsappBtn = () => {
                 height={35}
                 sizes=""
             />
-        </Link>
+        </button>
     );
 }
 

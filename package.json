@@ -19,6 +19,8 @@
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@typebot.io/js": "^0.2.55",
+    "@typebot.io/nextjs": "^0.2.55",
     "axios": "^1.6.5",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",

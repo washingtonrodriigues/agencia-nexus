@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <div className={`bg-transparent flex items-center justify-between z-[1000] p-[15px] transition-all duration-[0.3s] ease ${styles.navbar} ${isMenuSticky ? styles.sticky : ''} lg:px-8`} >
-            <Link href="/"> <Image src="/logos/nexuslogo.png" alt="Nexus Agência Digital" className="lg:w-[200px]" width={150} height={76} sizes="" /></Link>
+            <Link href="/"> <Image src="/logos/nexuslogo.png" alt="Nexus Agência Digital" className="lg:w-[180px]" width={150} height={76} sizes="" /></Link>
             <Sheet>
                 <SheetTrigger asChild className="lg:hidden">
                     <Button className="bg-transparent">
